@@ -2,7 +2,7 @@ import {View, Text, StyleSheet, TextInput, Pressable, FlatList} from 'react-nati
   import React, {useState} from 'react';
   import {useQuery} from '@apollo/client/react';
   import {GET_ALL_PROFILES} from '../queries/query';
-  import UserProfile from '../components/UserProfile';
+  import ProfileCard from '../components/ProfileCard';
   import Ionicons from 'react-native-vector-icons/Ionicons';
   import AntIcon from 'react-native-vector-icons/AntDesign';
   
@@ -47,18 +47,6 @@ import {View, Text, StyleSheet, TextInput, Pressable, FlatList} from 'react-nati
           <Text style={ styles.logo }>
             Viral Nation
           </Text>
-          <View style={styles.icons}>
-            <Ionicons
-              name="sunny"
-              size={30}
-              color={ '#555'}
-            />
-            <Ionicons
-              name="moon"
-              size={24}
-              color={ '#555'}
-            />
-          </View>
         </View>
         <View style={{paddingHorizontal: 10}}>
           <View>
